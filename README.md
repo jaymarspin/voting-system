@@ -13,6 +13,15 @@ in the properties of the project
 search it on the internet if you find it hard to do
 
 
+once youre done
+you'll have to copy the votingServer folder and paste it inside
+c:/xampp/htdocs
+then you have to import the sql file
+in localhost/phpmyadmin the name of the database should be voting no other than that
+
+once you did all of that correctly then everything should run perfectly
+
+
 
 
 -- have a nice day
