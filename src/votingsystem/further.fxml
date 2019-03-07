@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import jfxtras.scene.layout.CircularPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="184.0" prefWidth="139.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="votingsystem.FurtherController">
+   <children>
+      <CircularPane clipAwayExcessWhitespace="false" layoutX="6.0" layoutY="6.0" style="-fx-background-color: #282828; -fx-background-radius: 180; -fx-border-radius: 180;">
+         <children>
+            <JFXButton contentDisplay="TOP" focusTraversable="false" onAction="#starter" text="Start Election" textFill="WHITESMOKE">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITESMOKE" glyphName="HOURGLASS" size="35">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </FontAwesomeIconView>
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="TOP" focusTraversable="false" onAction="#reult" text="Result" textFill="WHITESMOKE">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITESMOKE" glyphName="BAR_CHART" size="35">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </FontAwesomeIconView>
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="TOP" focusTraversable="false" onAction="#close" text="Close" textFill="WHITESMOKE">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITESMOKE" glyphName="CLOSE" size="35">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </FontAwesomeIconView>
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="TOP" focusTraversable="false" onAction="#goCandidates" text="Candidates" textFill="WHITESMOKE">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITESMOKE" glyphName="USERS" size="35">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </FontAwesomeIconView>
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="TOP" focusTraversable="false" onAction="#goVoters" text="Voters" textFill="WHITESMOKE">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITESMOKE" glyphName="USER" size="42">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </FontAwesomeIconView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </CircularPane>
+   </children>
+</AnchorPane>

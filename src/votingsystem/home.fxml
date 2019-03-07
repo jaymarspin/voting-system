@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="home" prefHeight="668.0" prefWidth="984.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="votingsystem.HomeController">
+   <children>
+      <VBox layoutX="23.0" layoutY="20.0" prefHeight="36.0" prefWidth="151.0" style="-fx-background-color: #104E8B;">
+         <effect>
+            <Glow />
+         </effect>
+         <children>
+            <VBox />
+         </children>
+      </VBox>
+      <TableView fx:id="electionTable" focusTraversable="false" layoutX="41.0" layoutY="68.0" prefHeight="580.0" prefWidth="1020.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="-46.0" AnchorPane.topAnchor="78.0">
+         <stylesheets>
+            <URL value="@viper.css" />
+            <URL value="@viper.css" />
+         </stylesheets></TableView>
+      <HBox layoutX="519.0" layoutY="22.0" prefHeight="32.0" prefWidth="238.0" spacing="41.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="22.0">
+         <children>
+            <HBox prefHeight="26.0" prefWidth="104.0" />
+         </children>
+      </HBox>
+      <Text fill="WHITE" layoutX="44.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Election" textAlignment="CENTER" wrappingWidth="144.201171875">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Text>
+      <FontAwesomeIconView fill="WHITE" glyphName="FLAG" layoutX="23.0" layoutY="51.0" onMouseReleased="#addVotings" size="35" wrappingWidth="151.00000279722735">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIconView>
+   </children>
+</AnchorPane>

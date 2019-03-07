@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="votingSystem.jnlp">
+  <information>
+    <title>votingSystem</title>
+    <vendor>kerr warren ondap</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\DynamicJasper-3.0.0-test-sources.jar" size="241709" download="eager" />
+    <jar href="lib\commons-beanutils-1.8.3.jar" size="232019" download="eager" />
+    <jar href="lib\commons-collections-3.2.1.jar" size="575389" download="eager" />
+    <jar href="lib\commons-digester-2.1.jar" size="196768" download="eager" />
+    <jar href="lib\commons-logging-1.1.2.jar" size="62051" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\groovy-all-2.1.2.jar" size="6338418" download="eager" />
+    <jar href="lib\gson-2.2.2.jar" size="189285" download="eager" />
+    <jar href="lib\gson-2.8.2-javadoc.jar" size="263440" download="eager" />
+    <jar href="lib\itext-4.2.0.jar" size="2243043" download="eager" />
+    <jar href="lib\itextpdf-5.4.0.jar" size="1889486" download="eager" />
+    <jar href="lib\jackson-all-1.9.0.jar" size="1105958" download="eager" />
+    <jar href="lib\jasper-compiler-jdt-5.5.23.jar" size="1213732" download="eager" />
+    <jar href="lib\jasperreports-4.7.1.jar" size="4001064" download="eager" />
+    <jar href="lib\java-json.jar" size="84697" download="eager" />
+    <jar href="lib\jcommon-1.0.16.jar" size="309293" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2211776" download="eager" />
+    <jar href="lib\jfreechart-1.0.13.jar" size="1425742" download="eager" />
+    <jar href="lib\jfxtras-labs-samples-8.0-r6-SNAPSHOT-all.jar" size="4785232" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.24.jar" size="846263" download="eager" />
+    <jar href="lib\mysql-connector-java-8.0.11.jar" size="2036609" download="eager" />
+    <jar href="lib\sortalgorithms.jar" size="19321" download="eager" />
+    <jar href="votingSystem.jar" size="3155135" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="votingSystem" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="votingsystem.VotingSystem"  name="votingSystem" />
+  <update check="always"/>
+</jnlp>

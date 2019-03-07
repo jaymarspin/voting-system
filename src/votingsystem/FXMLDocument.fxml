@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="611.0" prefWidth="643.0" style="-fx-border-color: #ccc; -fx-border-width: 1px;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="votingsystem.FXMLDocumentController">
+   <children>
+      <AnchorPane layoutX="338.0" layoutY="2.0" prefHeight="609.0" prefWidth="322.0" style="-fx-background-color: #dedede;" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="338.0" AnchorPane.topAnchor="2.0">
+         <children>
+            <ImageView fitHeight="290.0" fitWidth="345.0" layoutY="347.0" opacity="0.15" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../../../image/98476412-presidential-election-voting-poster-vote-concept-vector-illustration-.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="146.0" layoutY="404.0" text="Voter's ID:" textAlignment="CENTER" textFill="#27425b">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="352.0" fitWidth="351.0" layoutY="-3.0" opacity="0.17" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../../../image/nUDdqXZWFDVumUAhHi8ZDo-BFu1W6Ur7L0ynswvzdvtanVI4G6fHDnd6qmDnSfYF0Q=h900.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="username" focusColor="BLACK" layoutX="58.0" layoutY="160.0" maxWidth="309.0" minWidth="241.0" onKeyReleased="#eraserOne" prefHeight="32.0" prefWidth="241.0" unFocusColor="BLACK" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="30.0" />
+            <JFXPasswordField fx:id="password" focusColor="BLACK" layoutX="62.0" layoutY="262.0" maxWidth="308.0" minWidth="241.0" onKeyReleased="#eraserOne" prefHeight="32.0" prefWidth="241.0" unFocusColor="BLACK" AnchorPane.leftAnchor="62.0" AnchorPane.rightAnchor="26.0" />
+            <JFXTextField fx:id="voters" focusColor="BLACK" layoutX="63.0" layoutY="426.0" maxWidth="308.0" minWidth="241.0" onKeyReleased="#eraserTwo" prefHeight="32.0" prefWidth="241.0" unFocusColor="BLACK" />
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="137.0" layoutY="504.0" minHeight="18.0" onAction="#log" opacity="0.7" prefHeight="32.0" prefWidth="102.0" style="-fx-background-color: #333; -fx-border-radius: 60px; -fx-background-radius: 60px;" text="Log In" textFill="WHITESMOKE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="21.0" layoutY="97.0" text="Admin Log In" textFill="#27425b">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="357.0" text="Voters Log In">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font></Label>
+            <Separator layoutX="10.0" layoutY="315.0" opacity="0.0" prefHeight="9.0" prefWidth="298.0" style="-fx-background-color: #ccc;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+            <FontAwesomeIconView glyphName="CLOSE" layoutX="334.0" layoutY="17.0" onMouseReleased="#close" size="18" text="">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </FontAwesomeIconView>
+            <Label layoutX="146.0" layoutY="126.0" text="Username:" textAlignment="CENTER" textFill="#27425b">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="146.0" layoutY="225.0" text="Password:" textAlignment="CENTER" textFill="#27425b">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <FontAwesomeIconView fill="WHITESMOKE" glyphName="USER" layoutX="63.0" layoutY="392.0" size="100" text="" />
+      <Label layoutX="452.0" layoutY="144.0" />
+      <Circle fx:id="circle" fill="DODGERBLUE" layoutX="163.0" layoutY="244.0" opacity="0.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <ImageView fitHeight="151.0" fitWidth="369.0" layoutX="4.0" layoutY="-7.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../../../image/banisil.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="290.0" fitWidth="339.0" layoutY="350.0" opacity="0.17" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../../../image/ag-construction-school-building-luray.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="72.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../image/VOTING%20SYSTEM.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="322.0" fitWidth="339.0" layoutX="11.0" layoutY="115.0" nodeOrientation="INHERIT" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../../../image/images%20copy.png" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>
